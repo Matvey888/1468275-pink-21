@@ -38,6 +38,138 @@
     </nav>
   </header>
 
+  <main class="page-main">
+    <h1 class="page-main__title">Фотографии
+      пользователей</h1>
+      <p class="page-main__text">
+        Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?
+      </p>
+      <section class="page-main__gallery gallery">
+        <h2 class="visually-hidden">Галерея</h2>
+        <div class="gallery__panorama panorama">
+          <a href="#" class="panorama__button">Панорама дня</a>
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg">
+            <img src="img/panorama.jpg" alt="Фотография дня" class="panorama__img">
+          </picture>
+          <article class="panorama__user-info user-info">
+            <h3 class="user-info__name">Анна <span class="user-info__time">(5 минут назад)</span></h3>
+            <p class="user-info__text">
+              Прыгать или нет? Напишите в
+              комментарии свой совет и
+              смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!
+            </p>
+            <span class="user-info__likes">Нравится: 215</span>
+          </article>
+        </div>
+        <div class="gallery__user-card user-card">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img">
+              <source media="(min-width: 660px)" srcset="img">
+            <img src="img" alt="" class="user-card__img">
+          </picture>
+          <article class="panorama__user-info user-info">
+            <h3 class="user-info__name">Левон <span class="user-info__time">(5 часов назад)</span></h3>
+            <p class="user-info__text">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <span class="user-info__likes">Нравится: 356</span>
+          </article>
+        </div>
+        <div class="gallery__user-card user-card">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img">
+              <source media="(min-width: 660px)" srcset="img">
+            <img src="img" alt="" class="user-card__img">
+          </picture>
+          <article class="panorama__user-info user-info">
+            <h3 class="user-info__name">Антон <span class="user-info__time">(12 часов назад)</span></h3>
+            <p class="user-info__text">
+              Соседи будут рады!
+            </p>
+            <span class="user-info__likes">Нравится: 666</span>
+          </article>
+        </div>
+        <div class="gallery__user-card user-card">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img">
+              <source media="(min-width: 660px)" srcset="img">
+            <img src="img" alt="" class="user-card__img">
+          </picture>
+          <article class="panorama__user-info user-info">
+            <h3 class="user-info__name">Борис <span class="user-info__time">(20 часов назад)</span></h3>
+            <p class="user-info__text">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <span class="user-info__likes">Нравится: 215</span>
+          </article>
+        </div>
+        <div class="gallery__user-card user-card">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img">
+              <source media="(min-width: 660px)" srcset="img">
+            <img src="img" alt="" class="user-card__img">
+          </picture>
+          <article class="panorama__user-info user-info">
+            <h3 class="user-info__name">Сергей <span class="user-info__time">(25 часов назад)</span></h3>
+            <p class="user-info__text">
+              Самая кубанская в мире!
+            </p>
+            <span class="user-info__likes">Нравится: 4</span>
+          </article>
+        </div>
+        <div class="gallery__user-card user-card">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img">
+              <source media="(min-width: 660px)" srcset="img">
+            <img src="img" alt="" class="user-card__img">
+          </picture>
+          <article class="panorama__user-info user-info">
+            <h3 class="user-info__name">Максим <span class="user-info__time">(40 часов назад)</span></h3>
+            <p class="user-info__text">
+              Где снег-то?
+            </p>
+            <span class="user-info__likes">Нравится: 150</span>
+          </article>
+        </div>
+        <div class="gallery__user-card user-card">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img">
+              <source media="(min-width: 660px)" srcset="img">
+            <img src="img" alt="" class="user-card__img">
+          </picture>
+          <article class="panorama__user-info user-info">
+            <h3 class="user-info__name">Надежда <span class="user-info__time">(45 часов назад)</span></h3>
+            <p class="user-info__text">
+              Всем GM и взаимные лайки!
+            </p>
+            <span class="user-info__likes">Нравится: 2560</span>
+          </article>
+        </div>
+      </section>
+      <section class="page-main__post post">
+        <p class="post__text">
+          Затмите их всех!
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <form action="echo" method="POST" class="post__form">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img">
+            <source media="(min-width: 660px)" srcset="img">
+            <img src="img" alt="" class="post__form-img">
+          </picture>
+          <div class="post__button-list">
+            <button type="submit" class="post__button-list-item">Запостить</button>
+            <button class="post__button-list-item" type="reset" disabled>Отмена</button>
+          </div>
+        </form>
+      </section>
+
+  </main>
+
   <footer class="page-footer">
     <div class="page-footer__container wrapper">
       <picture>
@@ -50,7 +182,7 @@
         <li class="social__item"><a href="" class="social__link"><span class="visually-hidden">youtube</span></a></li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <a href="" class="copyright__link"></a>
+        <a href="" class="copyright__link">Разработано</a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyryght__link-logo"><svg></svg></a>
       </div>
     </div>
