@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Пинк страница формы</title>
 </head>
-<body>
+<body class="page__body">
 
+  <header class="page-header">
+    <a href="" class="page-header__link-logo">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип пинк" class="page-header__logo">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/Закрыть меню</span></button>
+      <ul class="main-nav__list">
+        <li class="main-menu__item">
+          <a href="index.html" class="main-menu__link">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="catalog.html" class="main-menu__link">Фотографии</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__link">Конкурс</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="https://htmlacademy.ru" class="main-menu__link">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <footer class="page-footer">
+    <div class="page-footer__container wrapper">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/footer-logo-desctop.svg">
+        <img src="img/footer-logo.svg" alt="Логотип пинк" class="page-footer__logo">
+      </picture>
+      <ul class="page-footer__social social">
+        <li class="social__item"><a href="" class="social__link"><span class="visually-hidden">twitter</span></a></li>
+        <li class="social__item"><a href="" class="social__link"><span class="visually-hidden">facebook</span></a></li>
+        <li class="social__item"><a href="" class="social__link"><span class="visually-hidden">youtube</span></a></li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <a href="" class="copyright__link"></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyryght__link-logo"><svg></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
 </body>
 </html>
