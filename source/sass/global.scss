@@ -33,8 +33,8 @@
 .wrapper {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 940px;
 }
 
@@ -59,3 +59,7 @@ $tablet-width: 660px;
 $desktop-width: 960px;
 
 // colors
+
+$basic-pink: #d22856;
+$basic-blue: #283645;
+$basic-white: #ffffff;

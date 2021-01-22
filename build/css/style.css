@@ -22,8 +22,8 @@
 .wrapper {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 940px; }
 
 .visually-hidden {
@@ -37,3 +37,107 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+.page {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.page__body {
+  margin: 0;
+  font-family: 'Open Sans',sans-serif;
+  min-width: 320px; }
+
+.page-header {
+  background-color: #283645;
+  box-shadow: 0px 1px 0px #000000; }
+  @media (min-width: 960px) {
+    .page-header {
+      background-color: #283645;
+      opacity: 30%; } }
+
+.page-header__container {
+  display: flex;
+  position: relative;
+  flex-direction: column; }
+  @media (min-width: 960px) {
+    .page-header__container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 960px; } }
+
+@media (min-width: 660px) {
+  .page-header__logo {
+    width: 145px;
+    height: 40px; } }
+
+@media (min-width: 960px) {
+  .page-header__logo {
+    width: 147px; } }
+
+.page-header__link-logo {
+  padding-left: 20px;
+  margin-top: 23px;
+  display: block;
+  height: 23px; }
+  @media (min-width: 660px) {
+    .page-header__link-logo {
+      height: 40px; } }
+
+.main-nav {
+  display: flex; }
+  .main-nav--closed {
+    display: flex; }
+  .main-nav--opened {
+    display: flex; }
+
+.main-nav__toggle {
+  position: absolute;
+  border: none;
+  background: none;
+  top: 23px;
+  right: 20px;
+  width: 23px;
+  height: 23px; }
+  .main-nav__toggle::before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 2px;
+    left: 0;
+    background-color: #ffffff;
+    transform: rotate(45deg); }
+  .main-nav__toggle::after {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 2px;
+    left: 0;
+    background-color: #ffffff;
+    transform: rotate(-45deg); }
+
+.main-nav__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding: 0;
+  width: 100%; }
+  @media (min-width: 960px) {
+    .main-nav__list {
+      flex-direction: row; } }
+
+.main-menu__item {
+  background-color: #283645;
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  height: 63px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px black; }
+
+.main-menu__link {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none; }
