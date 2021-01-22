@@ -3,8 +3,9 @@
   box-shadow: 0px 1px 0px #000000;
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-blue;
-    opacity: 30%;
+    background-color: $black-opacity;
+    min-height: 110px;
+    box-shadow: none;
   }
 }
 
@@ -12,12 +13,12 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  // justify-content: space-between;
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
     margin-right: auto;
     max-width: $desktop-width;
+    flex-direction: row;
   }
 }
 

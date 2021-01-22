@@ -6,6 +6,15 @@
 
 .page__body {
   margin: 0;
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   min-width: $mobile-width;
+
+  @media (min-width: $desktop-width) {
+    &--bg {
+      background-image: url("../img/back-desktop.jpg");
+      background-repeat: no-repeat;
+      background-position: center 0;
+      background-size: cover;
+    }
+  }
 }

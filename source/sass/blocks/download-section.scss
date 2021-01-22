@@ -1,0 +1,17 @@
+.download-section {
+  background-image: url("../img/back-mobile.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
+  }
+}
+
+.download-section__title {
+  margin-top: 0;
+}

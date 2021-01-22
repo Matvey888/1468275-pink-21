@@ -1,0 +1,11 @@
+.page-main {
+  &--index {
+    @media (min-width: $desktop-width) {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      max-width: 940px;
+    }
+  }
+}

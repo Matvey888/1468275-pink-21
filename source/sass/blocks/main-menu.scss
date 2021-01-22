@@ -7,10 +7,25 @@
   justify-content: center;
   align-items: center;
   border-top: solid 1px black;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
 }
 
 .main-menu__link {
   color: $basic-white;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    text-transform: none;
+    padding-bottom: 19px;
+
+    &--active {
+      border-bottom: 2px solid $basic-white;
+    }
+  }
 }

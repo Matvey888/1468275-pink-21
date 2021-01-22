@@ -1,6 +1,10 @@
 .main-nav {
-  // position: relative;
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: auto;
+  }
 
   &--closed {
     // display: none;
@@ -20,6 +24,10 @@
   right: 20px;
   width: 23px;
   height: 23px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 
   &::before {
     position: absolute;
@@ -52,5 +60,8 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    background-color: transparent;
   }
 }
